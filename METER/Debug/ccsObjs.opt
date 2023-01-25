@@ -1,0 +1,1 @@
+"./adc2.obj" "./clocking.obj" "./gpiom.obj" "./main.obj" "./timming.obj" "./timming2.obj" "../lnk_msp430fr4133.cmd" -llibc.a 
