@@ -3,49 +3,6 @@
 
 "C:\\ti\\ccs1120\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
  
-Building target: "METER.out"
-Invoking: MSP430 Linker
-"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --use_hw_mpy=none --advice:power=all --advice:hw_config=all --define=__MSP430FR4133__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"METER.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1120/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1120/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="METER_linkInfo.xml" --use_hw_mpy=none --rom_model -o "METER.out" "./adc2.obj" "./clocking.obj" "./gpiom.obj" "./main.obj" "./timming.obj" "./timming2.obj" "../lnk_msp430fr4133.cmd"  -llibc.a 
-<Linking>
-warning #10420-D: For FRAM devices, at start up, the GPIO power-on default high-impedance mode needs to be disabled to activate previously configured port settings. This can be done by clearing the LOCKLPM5 bit in PM5CTL0 register.
- 
- undefined                                  first referenced
-  symbol                                        in file     
- ---------                                  ----------------
- ADC_clearInterrupt                         ./adc2.obj      
- ADC_configureMemory                        ./adc2.obj      
- ADC_enable                                 ./adc2.obj      
- ADC_enableInterrupt                        ./adc2.obj      
- ADC_init                                   ./adc2.obj      
- ADC_setResolution                          ./adc2.obj      
- ADC_setupSamplingTimer                     ./adc2.obj      
- ADC_startConversion                        ./adc2.obj      
- CS_getACLK                                 ./clocking.obj  
- CS_getMCLK                                 ./clocking.obj  
- CS_getSMCLK                                ./clocking.obj  
- CS_initClockSignal                         ./clocking.obj  
- CS_initFLLSettle                           ./clocking.obj  
- GPIO_setAsOutputPin                        ./gpiom.obj     
- GPIO_setAsPeripheralModuleFunctionInputPin ./gpiom.obj     
- GPIO_toggleOutputOnPin                     ./timming.obj   
- PMM_unlockLPM5                             ./gpiom.obj     
- Timer_A_clearCaptureCompareInterrupt       ./timming.obj   
- Timer_A_initCompareMode                    ./timming.obj   
- Timer_A_initUpMode                         ./timming.obj   
- Timer_A_startCounter                       ./main.obj      
- WDT_A_hold                                 ./main.obj      
- 
-error #10234-D: unresolved symbols remain
-error #10010: errors encountered during linking; "METER.out" not built
-remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
- 
->> Compilation failure
-makefile:146: recipe for target 'METER.out' failed
-gmake[1]: *** [METER.out] Error 1
-makefile:142: recipe for target 'all' failed
-gmake: *** [all] Error 2
+gmake[1]: 'METER.out' is up to date.
 
 **** Build Finished ****
